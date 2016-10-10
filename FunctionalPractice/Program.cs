@@ -3,8 +3,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Collections.Generic;
 
-public class Program
-{
+public class Program {
 
     /**
      * PART 0
@@ -12,9 +11,13 @@ public class Program
      * Write a function that calculates the sum of all the numbers in an array
      */
 
-    public static int sumOfArray(int[] arr)
-    {
-        // YOUR CODE HERE
+    public static int sumOfArray(int[] arr){
+
+        int[] sumOfArray = new int [0];
+        int sum = 0;
+        for (int i = 0; i < arr.Length; i++) {
+            sum += sumOfArray[0];
+        }
         return 0;
     }
 
@@ -25,8 +28,7 @@ public class Program
      * arguments and computes the sum of those two numbers.
      */
 
-    public static int sum(int a, int b)
-    {
+    public static int sum(int a, int b){
         // YOUR CODE HERE
         return 0;
     }
@@ -38,8 +40,7 @@ public class Program
      * computes the sum of those numbers
      */
 
-    public static int sumAll()
-    {
+    public static int sumAll(){
         // YOUR CODE HERE
         return 0;
     }
@@ -51,8 +52,7 @@ public class Program
      * - if no GCD exists, return 1
      */
 
-    public static int GCD(int a, int b)
-    {
+    public static int GCD(int a, int b){
         // YOUR CODE HERE
         return 0;
     }
@@ -63,8 +63,7 @@ public class Program
      * write a function that prints out the Least Common Multiple of two numbers
      */
 
-    public static int LCM(int a, int b)
-    {
+    public static int LCM(int a, int b){
         // YOUR CODE HERE
         return 0;
     }
@@ -79,8 +78,7 @@ public class Program
      * - for every number that is a multiple of 3 and 5, return "fizzbuzz"
      */
 
-    public static string fizzbuzz(int n)
-    {
+    public static string fizzbuzz(int n){
         return "";
     }
 
@@ -91,8 +89,7 @@ public class Program
      * and returns the largest of them.
      */
 
-    public static int max(int a, int b)
-    {
+    public static int max(int a, int b){
         // YOUR CODE HERE
         return 0;
     }
@@ -104,8 +101,7 @@ public class Program
      * numbers as arguments and returns the largest of them.
      */
 
-    public static int maxOfThree(int a, int b, int c)
-    {
+    public static int maxOfThree(int a, int b, int c){
         // YOUR CODE HERE
         return 0;
     }
@@ -117,8 +113,7 @@ public class Program
      * numbers as arguments and returns the largest of them.
      */
 
-    public static int maxOfAll()
-    {
+    public static int maxOfAll(){
         // YOUR CODE HERE
         return 0;
     }
@@ -130,8 +125,7 @@ public class Program
      * and returns true if it is a vowel, false otherwise.
      */
 
-    public static bool isVowel(char c)
-    {
+    public static bool isVowel(char c){
         // YOUR CODE HERE
         return false;
     }
@@ -148,8 +142,7 @@ public class Program
 
      */
 
-    public static string rovarspraket(string s)
-    {
+    public static string rovarspraket(string s){
         // YOUR CODE HERE
         return "";
     }
@@ -163,8 +156,7 @@ public class Program
      * string "books".
      */
 
-    public static string reverse(string str)
-    {
+    public static string reverse(string str){
         // YOUR CODE HERE
         return "";
     }
@@ -178,18 +170,16 @@ public class Program
      * i.e. findLongestWord("book dogs") should return "book"
      */
 
-    public static string findLongestWord(string sentence)
-    {
+    public static string findLongestWord(string sentence){
         // YOUR CODE HERE
         return "";
     }
 
-    public static void Main()
-    {
-        Debug.Assert(sumOfArray(new int[] { 1, 2) == 3);
-        Debug.Assert(sumOfArray(new int[]) == 0);
-        Debug.Assert(sumOfArray(new int[] { 1, 2, 3 }) == 6);
-        Debug.Assert(sumOfArray(new int[] { 10, 9, 8 }) == 27);
+    public static void Main(){
+        Debug.Assert(sumOfArray(new int[] { 1, 2 }) == 3);
+        Debug.Assert(sumOfArray(new int[] { }) == 0);
+        Debug.Assert(sumOfArray(new int[]{1, 2, 3}) == 6);
+        Debug.Assert(sumOfArray(new int[]{10, 9, 8}) == 27);
 
         Debug.Assert(sum(8, 11) == 19);
         Debug.Assert(sum(4, 100) == 104);
@@ -199,15 +189,15 @@ public class Program
         Debug.Assert(sumAll(8, 11, 20, 30, 11) == 80);
         Debug.Assert(sumAll(4, 100, 1, 4, -10, 15, 21) == 135);
 
-        Debug.Assert(GCD(5, 1) == 1);
-        Debug.Assert(GCD(15, 3) == 3);
-        Debug.Assert(GCD(15, 5) == 5);
-        Debug.Assert(GCD(50, 20) == 10);
+        Debug.Assert(GCD(5,1) == 1);
+        Debug.Assert(GCD(15,3) == 3);
+        Debug.Assert(GCD(15,5) == 5);
+        Debug.Assert(GCD(50,20) == 10);
 
-        Debug.Assert(LCM(10, 10) == 10);
-        Debug.Assert(LCM(2, 5) == 10);
-        Debug.Assert(LCM(3, 6) == 6);
-        Debug.Assert(LCM(0, 1) == 1);
+        Debug.Assert(LCM(10,10) == 10);
+        Debug.Assert(LCM(2,5) == 10);
+        Debug.Assert(LCM(3,6) == 6);
+        Debug.Assert(LCM(0,1) == 1);
 
         Debug.Assert(fizzbuzz(1) == ".");
         Debug.Assert(fizzbuzz(2) == "..");
@@ -215,16 +205,16 @@ public class Program
         Debug.Assert(fizzbuzz(5) == "..fizz.buzz");
         Debug.Assert(fizzbuzz(10) == "..fizz.buzzfizz..fizzbuzz");
 
-        Debug.Assert(max(1, 3) == 3);
-        Debug.Assert(max(0, 3) == 3);
-        Debug.Assert(max(10, 3) == 10);
-        Debug.Assert(max(-1, -3) == -1);
+        Debug.Assert(max(1,3)== 3);
+        Debug.Assert(max(0,3)== 3);
+        Debug.Assert(max(10,3)== 10);
+        Debug.Assert(max(-1,-3)== -1);
 
-        Debug.Assert(maxOfThree(1, 3, 2) == 3);
-        Debug.Assert(maxOfThree(0, 3, -1) == 3);
-        Debug.Assert(maxOfThree(10, 3, 50) == 50);
-        Debug.Assert(maxOfThree(-1, -3, -10) == -1);
-        Debug.Assert(maxOfAll(-30, -50, -1, -3, -10, -11, -20) == -1);
+        Debug.Assert(maxOfThree(1,3,2) == 3);
+        Debug.Assert(maxOfThree(0,3,-1) == 3);
+        Debug.Assert(maxOfThree(10,3,50) == 50);
+        Debug.Assert(maxOfThree(-1,-3,-10) == -1);
+        Debug.Assert(maxOfAll(-30, -50, -1,-3,-10, -11, -20) == -1);
         Debug.Assert(maxOfAll(10, 20, 11, 53, 100, 211, -20) == 211);
 
         Debug.Assert(isVowel("B") == false);
