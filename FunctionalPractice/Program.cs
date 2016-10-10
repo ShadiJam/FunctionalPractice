@@ -89,10 +89,6 @@ public class Program {
 
         int x = GCD(a, b);
         int y = ((a * b) / x);
-        return y;
-        y = 0;
-
-
         return 0;
     }
 
@@ -138,15 +134,7 @@ public class Program {
      */
 
     public static int max(int a, int b){
-
-        if {
-            a > b {
-                return a;
-            }
-            else {
-                return b;
-            }
-        }
+        int c = Math.Max(a, b);   
         return 0;
     }
 
@@ -158,7 +146,7 @@ public class Program {
      */
 
     public static int maxOfThree(int a, int b, int c){
-        // YOUR CODE HERE
+        int x = Math.Max(a, Math.Max(a, c));
         return 0;
     }
 
@@ -169,7 +157,7 @@ public class Program {
      * numbers as arguments and returns the largest of them.
      */
 
-    public static int maxOfAll(){
+    public static int maxOfAll(params int[] values){
         // YOUR CODE HERE
         return 0;
     }
