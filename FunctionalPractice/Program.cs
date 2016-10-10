@@ -11,11 +11,13 @@ public class Program {
      * Write a function that calculates the sum of all the numbers in an array
      */
 
-    public static int sumOfArray(int[] arr){
+    public static int sumOfArray(int[] arr)
+    {
 
         int[] sumOfArray = new int [0];
         int sum = 0;
-        for (int i = 0; i < arr.Length; i++) {
+        for (int i = 0; i < arr.Length; i++)
+        {
             sum += sumOfArray[0];
         }
         return 0;
@@ -29,20 +31,21 @@ public class Program {
      */
 
     public static int sum(int a, int b){
-        // YOUR CODE HERE
+
+        Func<int, int, int> sum = (int x, int y) => x+y;
         return 0;
     }
 
     /**
      * PART 1B
      *
-     * Write a function that handles any ampunt of numbers as input and
+     * Write a function that handles any amount of numbers as input and
      * computes the sum of those numbers
      */
 
-    public static int sumAll(){
-        // YOUR CODE HERE
+    public static int sumAll(params int[] nums){
         return 0;
+        
     }
 
     /**
@@ -52,8 +55,26 @@ public class Program {
      * - if no GCD exists, return 1
      */
 
-    public static int GCD(int a, int b){
-        // YOUR CODE HERE
+    public static int GCD(int a, int b) {
+
+        List<int> denomsA = new List<int>();
+        for(int i = 0; i < a; i++)
+        {
+            if (a % i == 0)
+                denomsA.Add(i);
+        }
+        List<int> denomsB = new List<int>();
+        for(int i = 0; i < b; i++)
+        {
+            if (b % i == 0)
+                denomsB.Add(i);
+        }
+        int g = 0;
+        foreach(int i in denomsA)
+        {
+            if (denomsB.Contains(i))
+                g = i;
+        }
         return 0;
     }
 
@@ -177,7 +198,7 @@ public class Program {
 
     public static void Main(){
         Debug.Assert(sumOfArray(new int[] { 1, 2 }) == 3);
-        Debug.Assert(sumOfArray(new int[] { }) == 0);
+        Debug.Assert(sumOfArray(new int[] {}) == 0);
         Debug.Assert(sumOfArray(new int[]{1, 2, 3}) == 6);
         Debug.Assert(sumOfArray(new int[]{10, 9, 8}) == 27);
 
