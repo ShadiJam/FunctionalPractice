@@ -85,7 +85,14 @@ public class Program {
      */
 
     public static int LCM(int a, int b){
-        // YOUR CODE HERE
+        
+
+        int x = GCD(a, b);
+        int y = ((a * b) / x);
+        return y;
+        y = 0;
+
+
         return 0;
     }
 
@@ -100,6 +107,26 @@ public class Program {
      */
 
     public static string fizzbuzz(int n){
+        
+        for(int i = 0; i < n; i++)
+        {
+            if(i % 3 == 0 && i%5 == 0)
+            {
+                Console.WriteLine("fizzbuzz");
+            }
+            if(i % 3 == 0)
+            {
+                Console.WriteLine("fizz");
+            }
+            if(i % 5 == 0)
+            {
+                Console.WriteLine("buzz");
+            }
+            else
+            {
+                Console.WriteLine(".");
+            }
+        }
         return "";
     }
 
@@ -111,7 +138,15 @@ public class Program {
      */
 
     public static int max(int a, int b){
-        // YOUR CODE HERE
+
+        if {
+            a > b {
+                return a;
+            }
+            else {
+                return b;
+            }
+        }
         return 0;
     }
 
