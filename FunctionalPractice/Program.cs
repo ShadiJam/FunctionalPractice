@@ -188,8 +188,20 @@ public class Program {
      */
 
     public static string rovarspraket(string s){
-        List<string> s = new List<string>();
-        foreach(isVowel)
+        List<string> aList = new List<string> {" "};
+        List<string> newList = new List<string>();
+
+        foreach (string "" in aList)
+        {
+            if(isVowel)
+            {
+                newList.Add(string.Format("{0}{1}{2}", s, "o", s));
+            }
+            else
+            {
+                newList.Add(string.Format("{0}", s));
+            }
+        }
             
         }
         
