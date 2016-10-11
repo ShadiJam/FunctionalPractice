@@ -169,10 +169,11 @@ public class Program {
      * and returns true if it is a vowel, false otherwise.
      */
 
-    public static bool isVowel(char c){
-        // YOUR CODE HERE
+    public static bool isVowel(string c) {
+        bool isVowel = "aeiouAEIOU".IndexOf(c) >= 0;
         return false;
     }
+
 
     /**
      * PART 8
@@ -187,7 +188,11 @@ public class Program {
      */
 
     public static string rovarspraket(string s){
-        // YOUR CODE HERE
+        List<string> s = new List<string>();
+        foreach(isVowel)
+            
+        }
+        
         return "";
     }
 
@@ -201,7 +206,12 @@ public class Program {
      */
 
     public static string reverse(string str){
-        // YOUR CODE HERE
+    char[] cArray = str.ToCharArray();
+    string reverse = String.Empty;
+    for (int i = cArray.Length - 1; i > -1; i--)
+    {
+        return += cArray[i];
+    }
         return "";
     }
 
@@ -215,7 +225,8 @@ public class Program {
      */
 
     public static string findLongestWord(string sentence){
-        // YOUR CODE HERE
+
+    string mostLength = sentence.Max(w => w.Length);
         return "";
     }
 
